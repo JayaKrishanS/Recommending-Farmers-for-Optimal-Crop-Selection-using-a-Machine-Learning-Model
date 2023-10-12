@@ -18,7 +18,6 @@ with tab1:
     st.markdown("---")
 
 with tab2:
-    st.title('Breast Cancer Prediction')
     st.markdown("<h5 style='color: orange;'>Kindly enter the details for prediction</h5>", unsafe_allow_html=True)
 
     
