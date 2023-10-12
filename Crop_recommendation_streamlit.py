@@ -1,6 +1,5 @@
 import  pickle
 import streamlit as st
-from sklearn.ensemble import RandomForestClassifier
 
 model = pickle.load(open("Crop_recommendation_model.pkl","rb"))
 
