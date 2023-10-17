@@ -2,11 +2,11 @@ import  pickle
 import streamlit as st
 
 model = pickle.load(open("Crop_recommendation_model.pkl","rb"))
+st.markdown("<h2> Recommending Farmers for Optimal Crop Selection using a Machine Learning Model</h2>", unsafe_allow_html=True)
 
 tab1,tab2 = st.tabs(["About project", "Predict"])
 
 with tab1:
-    st.markdown("<h2> Recommending Farmers for Optimal Crop Selection using a Machine Learning Model</h2>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: orange;'>Summary :</h5>", unsafe_allow_html=True)    
     st.markdown("* In this crop recommendation project, a dataset comprising 2200 records was sourced from Kaggle to guide optimal crop selection for farmers.")
     st.markdown("* The project starts with the loading of the dataset, followed by a exploratory data analysis (EDA) phase to gain insights into its structure and characteristics. Subsequently, feature engineering was undertaken to effectively separate the data into training and target components. This step aimed at preparing the dataset for the subsequent machine learning modeling phase.")
